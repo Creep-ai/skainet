@@ -34,6 +34,7 @@ langchain-core==0.2.1
 langchain-experimental==0.0.59
 langchain-openai==0.1.7
 langchain-text-splitters==0.2.0
+langchainhub==0.1.16
 langsmith==0.1.63
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
@@ -77,6 +78,7 @@ tomli==2.0.1
 toolz==0.12.1
 tornado==6.4
 tqdm==4.66.4
+types-requests==2.32.0.20240523
 typing-inspect==0.9.0
 typing_extensions==4.12.0
 tzdata==2024.1
