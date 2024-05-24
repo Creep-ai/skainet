@@ -1,5 +1,3 @@
-import typing as tp
-
 from langchain import hub
 from langchain.agents import AgentExecutor, create_openai_functions_agent
 from langchain.chains import create_sql_query_chain
