@@ -1,6 +1,3 @@
 __pycache__/
 .env
-postgresql_data/*
-!postgresql_data/.gitkeep
-!postgresql_data/dvdrental.tar
 .venv/
