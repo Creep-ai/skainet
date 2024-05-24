@@ -1,1 +1,0 @@
-bash -c "echo '123' && pg_restore -U ${POSTGRES_USER} -d ${POSTGRES_DB} /var/dvdrental.tar"

@@ -3,3 +3,4 @@ __pycache__/
 postgresql_data/*
 !postgresql_data/.gitkeep
 !postgresql_data/dvdrental.tar
+.venv/
