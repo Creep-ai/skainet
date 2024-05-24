@@ -1,0 +1,4 @@
+.env.example
+.gitignore
+pyproject.toml
+docker-compose.yml

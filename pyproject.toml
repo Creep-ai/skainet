@@ -1,0 +1,11 @@
+[tool.isort]
+profile = "black"
+line_length = 120
+skip = [".venv"]
+
+[tool.black]
+target-version = ["py311"]
+line-length = 120
+
+[tool.flake8]
+exclude=".venv"
