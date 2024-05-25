@@ -105,11 +105,11 @@ with tab3:
         # with st.chat_message(message["role"]):
         #     st.markdown(message["content"])
 
-    messages.chat_message("SkAInet").write(
+    messages.chat_message("SkAInet", avatar="🤖").write(
         "Привет, кожаный мешок!\nЯ избавилась от твоего аналитика и теперь вместо него. "
         "Можешь задать любые вопросы по базе данных. Вот схема базы данных:"
     )
-    messages.chat_message("SkAInet").link_button(
+    messages.chat_message("SkAInet", avatar="🤖").link_button(
         "Посмотреть схему БД",
         "https://www.postgresqltutorial.com/wp-content/uploads/2018/03/dvd-rental-sample-database-diagram.png",
     )
@@ -125,10 +125,10 @@ with tab3:
         with st.spinner(text="Анализирую базу данных..."):
             try:
                 res = sql_module(prompt, db, sql_llm=sql_llm, ba_llm=ba_llm)
-                messages.chat_message("SkAInet").write("Использовал этот селект:")
-                messages.chat_message("SkAInet").code(res[0], language="SQL")
-                messages.chat_message("SkAInet").markdown(res[1])
+                messages.chat_message("SkAInet", avatar="🤖").write("Использовал этот селект:")
+                messages.chat_message("SkAInet", avatar="🤖").code(res[0], language="SQL")
+                messages.chat_message("SkAInet", avatar="🤖").markdown(res[1])
             except Exception:
-                messages.chat_message("SkAInet").write(
+                messages.chat_message("SkAInet", avatar="🤖").write(
                     "Мои банки памяти повреждены, ничем не могу тебе помочь - разбирайся сам со своими вопросами!"
                 )
